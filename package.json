@@ -1,0 +1,17 @@
+{
+  "name": "html_css_hometask",
+  "version": "1.0.0",
+  "description": "IT-Shark hometask",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass sass/common.scss css/common.css && yandex-browser index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "npm": "^6.4.1",
+    "sass": "^1.13.2"
+  }
+}

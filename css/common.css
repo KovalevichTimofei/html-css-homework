@@ -1,0 +1,132 @@
+body {
+  background-color: #E9E8E4;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 100px 300px 40px 260px 40px 280px 100px;
+  grid-template-rows: 20px 100px 20px 90px 20px 350px 20px 400px 70px;
+}
+
+.social-net-section, .dialogue-section, .people-to-follow-sidebar, .activity-feed-sidebar, .account-section, .nav-upper {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px lightgrey;
+  overflow: hidden;
+}
+
+.account > ul, .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+}
+
+.nav-upper {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.account-section {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.activity-feed-sidebar {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.people-to-follow-sidebar {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.dialogue-section {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.social-net-section {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+
+.menu {
+  justify-content: center;
+}
+
+.menu > li {
+  padding-bottom: 9px;
+  margin: 15px 15px 0;
+  line-height: 50px;
+  text-align: center;
+  color: #A3B2C9;
+  font: 1em system-ui;
+}
+
+.menu > li:first-child {
+  color: #4D75A3;
+  border-bottom: 5px solid #4D75A3;
+}
+
+.account {
+  height: 50%;
+  background-color: #4D75A3;
+  position: relative;
+}
+
+.account > ul {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+.account-social-ui {
+  flex-grow: 3;
+}
+
+.account-notifications {
+  flex-grow: 1;
+}
+
+.account-groups {
+  flex-grow: 1;
+}
+
+.account-dialogues {
+  flex-grow: 1;
+}
+
+.account-settings {
+  flex-grow: 10;
+}
+
+.account-search {
+  flex-grow: 1;
+}
+
+.account-exit {
+  flex-grow: 1;
+}
+
+.account-divider {
+  width: 2px;
+  background-color: #4A709D;
+}
+
+/*# sourceMappingURL=common.css.map */
