@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7678d661-79ff-428e-aa26-43885532ff76" name="Default" comment="" />
+    <list default="true" id="7678d661-79ff-428e-aa26-43885532ff76" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/common.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/common.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/common.scss" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,35 +21,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="common.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sass/common.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="48" />
+            <state relative-caret-position="348">
+              <caret line="116" column="10" selection-start-line="116" selection-start-column="10" selection-end-line="116" selection-end-column="10" />
               <folding>
-                <element signature="n#ul#0;n#nav#1;n#nav#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#45#51#0" />
+                <element signature="e#284#418#0" />
+                <element signature="e#436#442#0" />
+                <element signature="e#562#568#0" />
+                <element signature="e#430#549#0" />
+                <element signature="e#1377#1436#0" />
+                <element signature="e#1449#1594#0" />
+                <element signature="e#1619#1698#0" />
+                <element signature="e#1211#1217#0" />
+                <element signature="e#1744#1750#0" />
+                <element signature="e#1754#1760#0" />
+                <element signature="e#1413#1419#0" />
+                <element signature="e#1753#1872#0" />
+                <element signature="e#1899#2018#0" />
+                <element signature="e#2037#2156#0" />
+                <element signature="e#2177#2296#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sass/common.scss">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="106" column="15" selection-start-line="106" selection-start-column="15" selection-end-line="106" selection-end-column="15" />
+            <state relative-caret-position="225">
+              <caret line="15" column="89" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="89" />
               <folding>
-                <element signature="e#45#51#0" />
-                <element signature="e#284#418#0" />
-                <element signature="e#430#549#0" />
-                <element signature="e#567#686#0" />
-                <element signature="e#710#829#0" />
-                <element signature="e#856#975#0" />
-                <element signature="e#994#1113#0" />
-                <element signature="e#1134#1253#0" />
-                <element signature="e#1377#1436#0" />
-                <element signature="e#1449#1594#0" />
-                <element signature="e#1619#1698#0" />
+                <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -54,10 +67,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -66,6 +82,7 @@
         <option value="$PROJECT_DIR$/sass/common.sass" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/css/common.css" />
+        <option value="$PROJECT_DIR$/script.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/sass/common.scss" />
       </list>
@@ -87,6 +104,7 @@
     <option name="width" value="1368" />
     <option name="height" value="750" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -150,12 +168,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1536322111135</updated>
-      <workItem from="1536322112413" duration="22332000" />
+      <workItem from="1536322112413" duration="33964000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22332000" />
+    <option name="totallyTimeSpent" value="33964000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="750" extended-state="6" />
@@ -167,7 +185,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329582" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info id="npm" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" />
@@ -227,32 +245,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="48" />
+        <state relative-caret-position="225">
+          <caret line="15" column="89" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="89" />
           <folding>
-            <element signature="n#ul#0;n#nav#1;n#nav#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/common.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="106" column="15" selection-start-line="106" selection-start-column="15" selection-end-line="106" selection-end-column="15" />
+        <state relative-caret-position="348">
+          <caret line="116" column="10" selection-start-line="116" selection-start-column="10" selection-end-line="116" selection-end-column="10" />
           <folding>
             <element signature="e#45#51#0" />
             <element signature="e#284#418#0" />
+            <element signature="e#436#442#0" />
+            <element signature="e#562#568#0" />
             <element signature="e#430#549#0" />
-            <element signature="e#567#686#0" />
-            <element signature="e#710#829#0" />
-            <element signature="e#856#975#0" />
-            <element signature="e#994#1113#0" />
-            <element signature="e#1134#1253#0" />
             <element signature="e#1377#1436#0" />
             <element signature="e#1449#1594#0" />
             <element signature="e#1619#1698#0" />
+            <element signature="e#1211#1217#0" />
+            <element signature="e#1744#1750#0" />
+            <element signature="e#1754#1760#0" />
+            <element signature="e#1413#1419#0" />
+            <element signature="e#1753#1872#0" />
+            <element signature="e#1899#2018#0" />
+            <element signature="e#2037#2156#0" />
+            <element signature="e#2177#2296#0" />
           </folding>
         </state>
       </provider>

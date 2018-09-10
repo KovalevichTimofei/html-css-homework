@@ -25,6 +25,11 @@ body{
   list-style-type: none;
   margin: 0;
 }
+%icon-in-center-prototype{
+  margin: auto;
+  text-align: center;
+  color: $sidebar-text-color;
+}
 
 .nav-upper{
   @extend %section-prototype;
@@ -34,14 +39,119 @@ body{
   grid-row-end: 3;
 }
 
-.account-section{
-  @extend %section-prototype;
-  grid-column-start: 2;
-  grid-column-end: 7;
-  grid-row-start: 4;
-  grid-row-end: 5;
+.menu{
+  @extend %navbar-prototype;
+  justify-content: center;
 }
 
+.menu > li {
+  padding-bottom: 9px;
+  margin: 15px 15px 0;
+  line-height: 50px;
+  text-align: center;
+  color: $sidebar-text-color;
+  font: 1em system-ui;
+}
+
+.menu > li:first-child {
+  color: $top-sidebar-color;
+  border-bottom: 5px solid $top-sidebar-color;
+}
+.navigate{
+  height: 50%;
+  background-color: $top-sidebar-color;position: relative;
+}
+
+.navigate > ul{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  @extend %navbar-prototype;
+}
+
+.navigate > ul > li.navigate-social-ui{
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding-left: 15px;
+  flex-grow: 3;
+}
+.navigate > ul > li{
+  @extend %icon-in-center-prototype;
+  flex-grow: 1;
+}
+
+.navigate > ul > li.navigate-settings{
+  flex-grow: 10;
+  text-align: right;
+  padding-right: 6px;
+}
+.navigate > ul > li.navigate-settings > i{
+  margin: 0 2px;
+}
+.navigate > ul > li.navigate-settings > span{
+  margin-right: 15px;
+}
+.navigate > ul > li.navigate-divider{
+  flex-grow: 0;
+  margin: inherit;
+  text-align: inherit;
+  width: 2px;
+  background-color: #4A709D;
+}
+.navigate > ul > li.navigate-notifications{
+  position: relative;
+  color: white;
+}
+.navigate > ul > li.navigate-notifications > div{
+  bottom: 50%;
+  left: 50%;
+  position: absolute;
+  color: white;
+  background-color: coral;
+  width: 8px;
+  height: 8px;
+  padding: 3px;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  border-radius: 1px;
+}
+.account-section{
+   @extend %section-prototype;
+   grid-column-start: 2;
+   grid-column-end: 7;
+   grid-row-start: 4;
+   grid-row-end: 5;
+ }
+
+.account-section > ul{
+  @extend %navbar-prototype;
+}
+
+.account-avatar{
+  flex-grow: 2;
+}
+.account-name{
+  flex-grow: 4
+}
+.account-1{
+  flex-grow: 1;
+}
+.account-2{
+  flex-grow: 1;
+}
+.account-3{
+  flex-grow: 1;
+}
+.account-4{
+  flex-grow: 1;
+}
+.account-buttons{
+  flex-grow: 3;
+}
 .activity-feed-sidebar{
   @extend %section-prototype;
   grid-column-start: 2;
@@ -72,60 +182,4 @@ body{
   grid-column-end: 7;
   grid-row-start: 8;
   grid-row-end: 9;
-}
-.menu{
-  @extend %navbar-prototype;
-  justify-content: center;
-}
-
-.menu > li {
-  padding-bottom: 9px;
-  margin: 15px 15px 0;
-  line-height: 50px;
-  text-align: center;
-  color: $sidebar-text-color;
-  font: 1em system-ui;
-}
-
-.menu > li:first-child {
-  color: $top-sidebar-color;
-  border-bottom: 5px solid $top-sidebar-color;
-}
-.account{
-  height: 50%;
-  background-color: $top-sidebar-color;position: relative;
-}
-
-.account > ul{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  @extend %navbar-prototype;
-}
-
-.account-social-ui{
-  flex-grow: 3;
-}
-.account-notifications{
-  flex-grow: 1;
-}
-.account-groups{
-  flex-grow: 1;
-}
-.account-dialogues{
-  flex-grow: 1;
-}
-.account-settings{
-  flex-grow: 10;
-}
-.account-search{
-  flex-grow: 1;
-}
-.account-exit{
-  flex-grow: 1;
-}
-.account-divider{
-  width: 2px;
-  background-color: #4A709D;
 }
