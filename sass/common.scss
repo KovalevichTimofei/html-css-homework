@@ -1,17 +1,16 @@
 $main-color: #E9E8E4;
 $top-sidebar-color: #4D75A3;
 $sidebar-text-color: #A3B2C9;
+$account-number-color: #588CB3;
 
 body{
   background-color: $main-color;
 }
-
 .main-grid{
   display: grid;
   grid-template-columns: 100px 300px 40px 260px 40px 280px 100px;
-  grid-template-rows: 20px 100px 20px 90px 20px 350px 20px 400px 70px;
+  grid-template-rows: 20px 100px 20px 150px 20px 350px 20px 400px 70px;
 }
-
 %section-prototype{
   background-color: white;
   border-radius: 5px;
@@ -30,7 +29,6 @@ body{
   text-align: center;
   color: $sidebar-text-color;
 }
-
 .nav-upper{
   @extend %section-prototype;
   grid-column-start: 2;
@@ -43,7 +41,6 @@ body{
   @extend %navbar-prototype;
   justify-content: center;
 }
-
 .menu > li {
   padding-bottom: 9px;
   margin: 15px 15px 0;
@@ -52,16 +49,16 @@ body{
   color: $sidebar-text-color;
   font: 1em system-ui;
 }
-
 .menu > li:first-child {
   color: $top-sidebar-color;
   border-bottom: 5px solid $top-sidebar-color;
 }
+
 .navigate{
   height: 50%;
-  background-color: $top-sidebar-color;position: relative;
+  background-color: $top-sidebar-color;
+  position: relative;
 }
-
 .navigate > ul{
   position: absolute;
   height: 100%;
@@ -69,7 +66,6 @@ body{
   padding: 0;
   @extend %navbar-prototype;
 }
-
 .navigate > ul > li.navigate-social-ui{
   color: white;
   text-align: left;
@@ -82,7 +78,6 @@ body{
   @extend %icon-in-center-prototype;
   flex-grow: 1;
 }
-
 .navigate > ul > li.navigate-settings{
   flex-grow: 10;
   text-align: right;
@@ -119,39 +114,97 @@ body{
   font-size: 0.5em;
   border-radius: 1px;
 }
+
+%account-chars-prototype{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .account-section{
    @extend %section-prototype;
    grid-column-start: 2;
    grid-column-end: 7;
    grid-row-start: 4;
    grid-row-end: 5;
+   position: relative;
  }
-
 .account-section > ul{
   @extend %navbar-prototype;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0;
 }
-
 .account-avatar{
-  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.account-avatar > img{
+  width: 74px;
+  height: 70px;
+  border-radius: 40px;
+}
+.account-divider{
+  margin: auto;
+  width: 1px;
+  background-color: #F6F6F6;
+  height: 50%;
 }
 .account-name{
-  flex-grow: 4
+  @extend %account-chars-prototype;
+  flex-grow: 2;
+  font-family: "Trebuchet MS", sans-serif;
 }
-.account-1{
-  flex-grow: 1;
+.account-name > q{
+  quotes: none;
+  font-size: small;
+  color: $sidebar-text-color;
 }
-.account-2{
-  flex-grow: 1;
+.account-name > span{
+  font-size: large;
 }
-.account-3{
+.account-numbers{
+  @extend %account-chars-prototype;
   flex-grow: 1;
+  align-items: center;
 }
-.account-4{
-  flex-grow: 1;
+.account-sign{
+   color: $sidebar-text-color;
+   font-size: small;
+   font-family: sans-serif;
+ }
+.account-number{
+  color: $top-sidebar-color;
+  font-size: large;
+  font-family: sans-serif;
 }
 .account-buttons{
-  flex-grow: 3;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+%account-button-prototype{
+  border-radius: 5px;
+  border: 2px solid $top-sidebar-color;
+  margin: 10px;
+  width: 145px;
+  height: 40px;
+}
+.account-add-button{
+  @extend %account-button-prototype;
+  background-color: white;
+  color: $top-sidebar-color;
+}
+.account-send-button{
+  @extend %account-button-prototype;
+  background-color: $top-sidebar-color;
+  color: white;
+}
+
 .activity-feed-sidebar{
   @extend %section-prototype;
   grid-column-start: 2;
@@ -160,12 +213,57 @@ body{
   grid-row-end: 7;
 }
 
+$show-more-color: #EBF4FA;
+
 .people-to-follow-sidebar{
   @extend %section-prototype;
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 6;
   grid-row-end: 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  //position: relative;
+}
+.people-to-follow-top{
+  width: 100%;
+}
+.people-to-follow-list{
+
+}
+.people-to-follow-list > ul{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+.people-to-follow-list > ul > li{
+  display: flex;
+  flex-direction: row;
+}
+.people-to-follow-list > ul > li > img{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+.people-to-follow-list > ul > li > div{
+  display: flex;
+  flex-direction: column;
+}
+.people-to-follow-list > ul > li > div > span{
+  font-size: large;
+}
+.people-to-follow-list > ul > li > div > q{
+  quotes: none;
+  font-size: small;
+}
+.people-to-follow-bottom{
+  width: 100%;
+  background-color: $show-more-color;
+  color: $top-sidebar-color;
+  text-align: center;
 }
 
 .dialogue-section{

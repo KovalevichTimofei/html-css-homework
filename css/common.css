@@ -5,7 +5,7 @@ body {
 .main-grid {
   display: grid;
   grid-template-columns: 100px 300px 40px 260px 40px 280px 100px;
-  grid-template-rows: 20px 100px 20px 90px 20px 350px 20px 400px 70px;
+  grid-template-rows: 20px 100px 20px 150px 20px 350px 20px 400px 70px;
 }
 
 .social-net-section, .dialogue-section, .people-to-follow-sidebar, .activity-feed-sidebar, .account-section, .nav-upper {
@@ -122,39 +122,103 @@ body {
   border-radius: 1px;
 }
 
+.account-numbers, .account-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .account-section {
   grid-column-start: 2;
   grid-column-end: 7;
   grid-row-start: 4;
   grid-row-end: 5;
+  position: relative;
+}
+
+.account-section > ul {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0;
 }
 
 .account-avatar {
-  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.account-avatar > img {
+  width: 74px;
+  height: 70px;
+  border-radius: 40px;
+}
+
+.account-divider {
+  margin: auto;
+  width: 1px;
+  background-color: #F6F6F6;
+  height: 50%;
 }
 
 .account-name {
-  flex-grow: 4;
+  flex-grow: 2;
+  font-family: "Trebuchet MS", sans-serif;
 }
 
-.account-1 {
-  flex-grow: 1;
+.account-name > q {
+  quotes: none;
+  font-size: small;
+  color: #A3B2C9;
 }
 
-.account-2 {
-  flex-grow: 1;
+.account-name > span {
+  font-size: large;
 }
 
-.account-3 {
+.account-numbers {
   flex-grow: 1;
+  align-items: center;
 }
 
-.account-4 {
-  flex-grow: 1;
+.account-sign {
+  color: #A3B2C9;
+  font-size: small;
+  font-family: sans-serif;
+}
+
+.account-number {
+  color: #4D75A3;
+  font-size: large;
+  font-family: sans-serif;
 }
 
 .account-buttons {
-  flex-grow: 3;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-send-button, .account-add-button {
+  border-radius: 5px;
+  border: 2px solid #4D75A3;
+  margin: 10px;
+  width: 145px;
+  height: 40px;
+}
+
+.account-add-button {
+  background-color: white;
+  color: #4D75A3;
+}
+
+.account-send-button {
+  background-color: #4D75A3;
+  color: white;
 }
 
 .activity-feed-sidebar {
@@ -169,6 +233,49 @@ body {
   grid-column-end: 5;
   grid-row-start: 6;
   grid-row-end: 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.people-to-follow-list > ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+
+.people-to-follow-list > ul > li {
+  display: flex;
+  flex-direction: row;
+}
+
+.people-to-follow-list > ul > li > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.people-to-follow-list > ul > li > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.people-to-follow-list > ul > li > div > span {
+  font-size: large;
+}
+
+.people-to-follow-list > ul > li > div > q {
+  quotes: none;
+  font-size: small;
+}
+
+.people-to-follow-bottom {
+  width: 100%;
+  background-color: #EBF4FA;
+  color: #4D75A3;
+  text-align: center;
 }
 
 .dialogue-section {
