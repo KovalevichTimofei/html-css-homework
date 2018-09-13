@@ -1,11 +1,16 @@
+@charset "UTF-8";
 body {
   background-color: #E9E8E4;
 }
 
+button:focus {
+  outline: none;
+}
+
 .main-grid {
   display: grid;
-  grid-template-columns: 100px 300px 40px 260px 40px 280px 100px;
-  grid-template-rows: 20px 100px 20px 150px 20px 350px 20px 400px 70px;
+  grid-template-columns: 100px 300px 40px 270px 40px 280px 100px;
+  grid-template-rows: 20px 100px 20px 150px 20px 490px 20px 400px 70px;
 }
 
 .social-net-section, .dialogue-section, .people-to-follow-sidebar, .activity-feed-sidebar, .account-section, .nav-upper {
@@ -203,7 +208,7 @@ body {
   align-items: center;
 }
 
-.account-send-button, .account-add-button {
+.account-send-button:hover, .account-send-button, .account-add-button:hover, .account-add-button {
   border-radius: 5px;
   border: 2px solid #4D75A3;
   margin: 10px;
@@ -216,9 +221,41 @@ body {
   color: #4D75A3;
 }
 
+.account-add-button:hover {
+  transition: 700ms;
+  background-color: #4D75A3;
+  color: white;
+}
+
 .account-send-button {
   background-color: #4D75A3;
   color: white;
+}
+
+.account-send-button:hover {
+  transition: 700ms;
+  background-color: white;
+  color: #4D75A3;
+}
+
+.people-to-follow-top, .activity-feed-top {
+  width: 100%;
+  font-family: sans-serif;
+  font-size: large;
+  padding-top: 20px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  color: grey;
+}
+
+.people-to-follow-bottom, .activity-feed-bottom {
+  width: 100%;
+  background-color: #EBF4FA;
+  color: #4D75A3;
+  text-align: center;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-size: small;
 }
 
 .activity-feed-sidebar {
@@ -226,6 +263,118 @@ body {
   grid-column-end: 3;
   grid-row-start: 6;
   grid-row-end: 7;
+  position: relative;
+}
+
+.activity-feed-top {
+  position: absolute;
+  top: 0;
+}
+
+.activity-feed-list > ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-left: 10px;
+  padding: 0;
+  position: absolute;
+  top: 61px;
+}
+
+.activity-feed-list > ul > li {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5px;
+}
+
+.activity-feed-list > ul > li img {
+  border-radius: 5px;
+}
+
+.activity-feed-list > ul > li > div {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+  margin-right: 10px;
+}
+
+.activity-feed-list > ul > li > div > span {
+  color: #A3B2C9;
+}
+
+.activity-feed-list > ul > li > div a {
+  outline: none;
+  text-decoration: none;
+  color: #588CB3;
+}
+
+.activity-feed-list > ul > li > div > ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.activity-feed-signature {
+  display: inline-block;
+  font-family: sans-serif;
+  color: #A3B2C9;
+}
+
+.activity-feed-list-link {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.activity-feed-list-link-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.activity-feed-list-link-content > a {
+  margin-bottom: 5px;
+}
+
+.activity-feed-list-link-content > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.photo {
+  max-width: 50px;
+  max-height: 50px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.line {
+  min-height: 10px;
+  height: 100%;
+  width: 2px;
+  background-color: #A3B2C9;
+  margin: 5px 0;
+}
+
+.link-photo {
+  max-width: 50px;
+  max-height: 50px;
+  margin-right: 5px;
+}
+
+.link-line {
+  height: 50px;
+  min-width: 2px;
+  background-color: #4D75A3;
+  margin: 0 10px 5px 0;
+}
+
+.activity-feed-bottom {
+  position: absolute;
+  bottom: 0;
 }
 
 .people-to-follow-sidebar {
@@ -236,46 +385,85 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
 }
 
 .people-to-follow-list > ul {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  padding: 0;
+  padding-left: 10px;
+  margin: 0;
 }
 
 .people-to-follow-list > ul > li {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  margin: 10px 0;
+  position: relative;
 }
 
 .people-to-follow-list > ul > li > img {
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
+  flex-grow: 1;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 40px;
+  margin-right: 10px;
 }
 
 .people-to-follow-list > ul > li > div {
+  flex-grow: 3;
   display: flex;
   flex-direction: column;
 }
 
 .people-to-follow-list > ul > li > div > span {
   font-size: large;
+  font-family: sans-serif;
 }
 
 .people-to-follow-list > ul > li > div > q {
   quotes: none;
   font-size: small;
+  font-family: sans-serif;
+  color: #A3B2C9;
 }
 
-.people-to-follow-bottom {
-  width: 100%;
-  background-color: #EBF4FA;
+.people-to-follow-list > ul > li > button {
+  min-width: 47px;
+  height: 30px;
+  border: 1px solid #A3B2C9;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: small;
   color: #4D75A3;
-  text-align: center;
+  background-color: white;
+  margin: 0 10px 0 0;
+  padding: 1px;
+}
+
+.people-to-follow-list > ul > li > button:hover {
+  transition: 700ms;
+  color: white;
+  background-color: #4D75A3;
+}
+
+.online-phone::after {
+  content: "";
+  font-family: FontAwesome;
+  color: #A3B2C9;
+  margin-left: 10px;
+}
+
+.online-sign {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  background-color: limegreen;
+  border: 2px solid white;
+  border-radius: 5px;
+  top: 30px;
+  left: 30px;
 }
 
 .dialogue-section {
@@ -283,6 +471,40 @@ body {
   grid-column-end: 7;
   grid-row-start: 6;
   grid-row-end: 7;
+  position: relative;
+}
+
+.dialogue-top {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #4D75A3;
+  color: #A3B2C9;
+  font-size: small;
+}
+
+.dialogue-top > span {
+  flex-grow: 1;
+}
+
+.dialogue-top > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+}
+
+.dialogue-photo {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin: 0 10px 0 25px;
 }
 
 .social-net-section {
